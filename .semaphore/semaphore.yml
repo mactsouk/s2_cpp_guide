@@ -12,13 +12,13 @@ blocks:
       - name: Select g++ version 6
         commands:
           - g++ --version
-          - sudo update-alternatives --set g++ "/usr/bin/g++-6"
+          - sudo update-alternatives --set gcc "/usr/bin/gcc-6"
           - g++ --version
 
       - name: Select g++ version 8
         commands:
           - g++ --version
-          - sudo update-alternatives --set g++ "/usr/bin/g++-8"
+          - sudo update-alternatives --set gcc "/usr/bin/gcc-8"
           - g++ --version
 
   - name: Compile C++ code
@@ -29,7 +29,7 @@ blocks:
           - checkout
           - g++ hw.cpp -o hw_4
           - ./hw_4
-          - sudo update-alternatives --set g++ "/usr/bin/g++-8"
+          - sudo update-alternatives --set gcc "/usr/bin/gcc-8"
           - g++ hw.cpp -o hw_8
           - ./hw_8
           - ls -l hw_4 hw_8
