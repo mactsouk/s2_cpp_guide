@@ -21,7 +21,7 @@ blocks:
           - sem-version cpp 8
           - g++ --version
 
-  - name: Compile C++ code
+  - name: Compile and run C++ code
     task:
       jobs:
       - name: Hello World!
